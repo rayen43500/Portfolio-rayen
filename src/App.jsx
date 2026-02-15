@@ -353,7 +353,13 @@ function App() {
           <div style={{ marginTop: '3rem' }}>
             {activeProjectDemo === 0 && (
               <>
-                <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>
+                <h3 style={{ 
+                  marginBottom: '1.5rem', 
+                  background: 'linear-gradient(135deg, #00d9ff 0%, #7c5cff 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>
                   Enterprise Operations SaaS - Live Dashboard Preview
                 </h3>
                 <OperationsSaaSDashboard />
@@ -361,7 +367,13 @@ function App() {
             )}
             {activeProjectDemo === 1 && (
               <>
-                <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>
+                <h3 style={{ 
+                  marginBottom: '1.5rem', 
+                  background: 'linear-gradient(135deg, #7c5cff 0%, #ffd700 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>
                   Mobile Field Service - Real-time Sync Demo
                 </h3>
                 <FieldServiceDemo />
@@ -369,7 +381,13 @@ function App() {
             )}
             {activeProjectDemo === 2 && (
               <>
-                <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>
+                <h3 style={{ 
+                  marginBottom: '1.5rem', 
+                  background: 'linear-gradient(135deg, #ffd700 0%, #00d9ff 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text'
+                }}>
                   Secure API - Architecture & Performance
                 </h3>
                 <APIArchitectureDemo />

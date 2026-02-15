@@ -1,37 +1,53 @@
 /* ===================== DESIGN TOKENS ===================== */
 :root {
-  /* Color Palette */
-  --primary: #00d4ff;
-  --primary-dark: #0099cc;
-  --secondary: #00ff88;
-  --accent: #ff6b6b;
-  --accent-soft: #ff8787;
+  /* Premium Color Palette - Elegant & Modern */
+  --primary: #00d9ff;
+  --primary-light: #4df0ff;
+  --primary-dark: #0099bb;
+  --secondary: #7c5cff;
+  --secondary-light: #9d7aff;
+  --secondary-dark: #5c3fee;
+  --accent: #ffd700;
+  --accent-light: #ffed4e;
+  --accent-dark: #cc9900;
   
-  /* Backgrounds */
-  --bg-dark: #0a0e27;
-  --bg-darker: #05070f;
-  --surface: #1a1f3a;
-  --surface-muted: #141829;
+  /* Backgrounds - Premium Dark */
+  --bg-dark: #0f1729;
+  --bg-darker: #0a0f1a;
+  --surface: #1a2540;
+  --surface-muted: #141e33;
+  --surface-light: #24334d;
   
   /* Text */
   --text: #ffffff;
-  --text-muted: #b0b8d4;
-  --text-subtle: #8890a8;
+  --text-muted: #a8b8d4;
+  --text-subtle: #7a8aa8;
+  --text-faint: #5a6a88;
   
   /* UI Elements */
-  --border: #2a2f47;
-  --border-light: #3a3f57;
+  --border: #2a3a52;
+  --border-light: #3a4a62;
+  --border-focus: #4a5a72;
+  
+  /* Success, Warning, Error */
+  --success: #00ff88;
+  --warning: #ffb366;
+  --error: #ff6b6b;
   
   /* Effects */
-  --shadow: rgba(0, 212, 255, 0.1);
-  --shadow-soft: rgba(0, 212, 255, 0.05);
-  --glass-blur: blur(10px);
+  --shadow: rgba(0, 217, 255, 0.12);
+  --shadow-soft: rgba(0, 217, 255, 0.06);
+  --shadow-lg: rgba(0, 217, 255, 0.2);
+  --glass-blur: blur(12px);
   
-  /* Gradients */
-  --gradient-hero: linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);
-  --gradient-section: linear-gradient(135deg, rgba(26, 31, 58, 0.4), rgba(20, 24, 41, 0.4));
-  --gradient-orb-1: #00d4ff;
-  --gradient-orb-2: #00ff88;
+  /* Gradients - Premium Combinations */
+  --gradient-hero: linear-gradient(135deg, #00d9ff 0%, #7c5cff 50%, #ffd700 100%);
+  --gradient-hero-alt: linear-gradient(135deg, #00d9ff 0%, #4df0ff 100%);
+  --gradient-section: linear-gradient(135deg, rgba(26, 37, 64, 0.5), rgba(20, 30, 51, 0.5));
+  --gradient-accent: linear-gradient(135deg, #7c5cff 0%, #00d9ff 100%);
+  --gradient-orb-1: #00d9ff;
+  --gradient-orb-2: #7c5cff;
+  --gradient-orb-3: #ffd700;
   
   /* Font Family */
   --font-accent: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -45,20 +61,25 @@
 }
 
 [data-theme="light"] {
-  --bg-dark: #ffffff;
-  --bg-darker: #f5f7fa;
-  --surface: #f0f2f7;
-  --surface-muted: #e8eaef;
+  /* Light mode premium palette */
+  --bg-dark: #f8f9fb;
+  --bg-darker: #f0f2f6;
+  --surface: #ffffff;
+  --surface-muted: #f5f7fa;
+  --surface-light: #eef1f7;
   
-  --text: #0a0e27;
+  --text: #0f1729;
   --text-muted: #4a5277;
   --text-subtle: #6a7088;
+  --text-faint: #8a8aa8;
   
-  --border: #d0d5e8;
-  --border-light: #e0e5f0;
+  --border: #dce2f0;
+  --border-light: #e8ecf4;
+  --border-focus: #d0d8e8;
   
-  --shadow: rgba(0, 212, 255, 0.08);
-  --shadow-soft: rgba(0, 212, 255, 0.04);
+  --shadow: rgba(0, 217, 255, 0.08);
+  --shadow-soft: rgba(0, 217, 255, 0.04);
+  --shadow-lg: rgba(0, 217, 255, 0.14);
 }
 
 /* ===================== GLOBAL STYLES ===================== */
@@ -192,8 +213,8 @@ nav a::after {
   bottom: -4px;
   left: 0;
   width: 0;
-  height: 2px;
-  background: var(--primary);
+  height: 2.5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
   transition: width 0.3s ease;
 }
 
@@ -251,19 +272,20 @@ nav a:hover::after {
 
 .hero {
   background: var(--gradient-hero);
-  box-shadow: 0 20px 60px var(--shadow);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  box-shadow: 0 20px 60px var(--shadow-lg);
+  border: 1px solid rgba(0, 217, 255, 0.25);
   border-radius: var(--radius-xl);
   padding: 4rem 2.5rem;
   margin-bottom: 2rem;
   position: relative;
   overflow: hidden;
+  color: var(--text);
 }
 
 /* ===================== TYPOGRAPHY ===================== */
 .eyebrow {
   margin: 0;
-  color: var(--secondary);
+  color: var(--primary);
   font-weight: 600;
   font-size: 0.95rem;
   letter-spacing: 0.1em;
@@ -373,12 +395,13 @@ h3 {
   background: var(--primary);
   color: var(--bg-dark);
   border-color: var(--primary);
+  font-weight: 700;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
-  background: var(--primary-dark);
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.35);
+  background: var(--primary-light);
 }
 
 .btn-secondary {
@@ -457,16 +480,17 @@ h3 {
   line-height: 1;
   padding: 0.5rem 0.8rem;
   border-radius: 20px;
-  border: 1px solid var(--border);
-  color: var(--secondary);
-  background: color-mix(in oklab, var(--surface) 80%, transparent);
+  border: 1px solid var(--secondary-dark);
+  color: var(--secondary-light);
+  background: color-mix(in oklab, var(--secondary) 12%, transparent);
   font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .tech-tag:hover {
-  border-color: var(--secondary);
-  background: color-mix(in oklab, var(--surface) 95%, transparent);
+  border-color: var(--secondary-light);
+  background: color-mix(in oklab, var(--secondary) 18%, transparent);
+  box-shadow: 0 4px 12px rgba(124, 92, 255, 0.2);
 }
 
 .card ul,
@@ -694,8 +718,8 @@ h3 {
 }
 
 .status-badge.completed {
-  background: color-mix(in oklab, var(--secondary) 20%, transparent);
-  color: var(--secondary);
+  background: color-mix(in oklab, var(--success) 20%, transparent);
+  color: var(--success);
 }
 
 .status-badge.in-progress {
@@ -704,8 +728,8 @@ h3 {
 }
 
 .status-badge.pending {
-  background: color-mix(in oklab, var(--text-subtle) 20%, transparent);
-  color: var(--text-subtle);
+  background: color-mix(in oklab, var(--warning) 20%, transparent);
+  color: var(--warning);
 }
 
 .sync-indicator {
