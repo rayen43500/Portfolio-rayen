@@ -355,7 +355,7 @@ function App() {
               <>
                 <h3 style={{ 
                   marginBottom: '1.5rem', 
-                  background: 'linear-gradient(135deg, #00d9ff 0%, #7c5cff 100%)',
+                  background: 'linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
@@ -369,7 +369,7 @@ function App() {
               <>
                 <h3 style={{ 
                   marginBottom: '1.5rem', 
-                  background: 'linear-gradient(135deg, #7c5cff 0%, #ffd700 100%)',
+                  background: 'linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'
@@ -383,7 +383,7 @@ function App() {
               <>
                 <h3 style={{ 
                   marginBottom: '1.5rem', 
-                  background: 'linear-gradient(135deg, #ffd700 0%, #00d9ff 100%)',
+                  background: 'linear-gradient(135deg, #0ea5e9 0%, #22d3ee 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text'

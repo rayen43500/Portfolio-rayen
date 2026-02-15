@@ -1,85 +1,89 @@
-/* ===================== DESIGN TOKENS ===================== */
+/* ===================== DESIGN TOKENS - TECH COLOR PALETTE ===================== */
 :root {
-  /* Premium Color Palette - Elegant & Modern */
-  --primary: #00d9ff;
-  --primary-light: #4df0ff;
-  --primary-dark: #0099bb;
-  --secondary: #7c5cff;
-  --secondary-light: #9d7aff;
-  --secondary-dark: #5c3fee;
-  --accent: #ffd700;
-  --accent-light: #ffed4e;
-  --accent-dark: #cc9900;
+  /* Primary Tech Cyan - Modern & Current */
+  --primary: #06b6d4;
+  --primary-light: #22d3ee;
+  --primary-lighter: #67e8f9;
+  --primary-dark: #0891b2;
   
-  /* Backgrounds - Premium Dark */
-  --bg-dark: #0f1729;
-  --bg-darker: #0a0f1a;
-  --surface: #1a2540;
-  --surface-muted: #141e33;
-  --surface-light: #24334d;
+  /* Secondary Blue - Tech Foundation */
+  --secondary: #0ea5e9;
+  --secondary-light: #38bdf8;
+  --secondary-dark: #0284c7;
   
-  /* Text */
+  /* Accent White - Clean & Professional */
+  --accent: #ffffff;
+  --accent-light: #f0f9ff;
+  --accent-dark: #e0f2fe;
+  
+  /* Backgrounds - True Black to Dark Navy */
+  --bg-dark: #0f172a;
+  --bg-darker: #020617;
+  --surface: #1e293b;
+  --surface-muted: #0f172a;
+  --surface-light: #334155;
+  
+  /* Text - High Contrast */
   --text: #ffffff;
-  --text-muted: #a8b8d4;
-  --text-subtle: #7a8aa8;
-  --text-faint: #5a6a88;
+  --text-muted: #cbd5e1;
+  --text-subtle: #94a3b8;
+  --text-faint: #64748b;
   
   /* UI Elements */
-  --border: #2a3a52;
-  --border-light: #3a4a62;
-  --border-focus: #4a5a72;
+  --border: #334155;
+  --border-light: #475569;
+  --border-focus: #64748b;
   
-  /* Success, Warning, Error */
-  --success: #00ff88;
-  --warning: #ffb366;
-  --error: #ff6b6b;
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
   
-  /* Effects */
-  --shadow: rgba(0, 217, 255, 0.12);
-  --shadow-soft: rgba(0, 217, 255, 0.06);
-  --shadow-lg: rgba(0, 217, 255, 0.2);
-  --glass-blur: blur(12px);
+  /* Effects - Tech Styled */
+  --shadow: rgba(6, 182, 212, 0.15);
+  --shadow-soft: rgba(6, 182, 212, 0.08);
+  --shadow-lg: rgba(6, 182, 212, 0.25);
+  --glass-blur: blur(10px);
   
-  /* Gradients - Premium Combinations */
-  --gradient-hero: linear-gradient(135deg, #00d9ff 0%, #7c5cff 50%, #ffd700 100%);
-  --gradient-hero-alt: linear-gradient(135deg, #00d9ff 0%, #4df0ff 100%);
-  --gradient-section: linear-gradient(135deg, rgba(26, 37, 64, 0.5), rgba(20, 30, 51, 0.5));
-  --gradient-accent: linear-gradient(135deg, #7c5cff 0%, #00d9ff 100%);
-  --gradient-orb-1: #00d9ff;
-  --gradient-orb-2: #7c5cff;
-  --gradient-orb-3: #ffd700;
+  /* Gradients - Modern Tech */
+  --gradient-hero: linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%);
+  --gradient-hero-alt: linear-gradient(135deg, #22d3ee 0%, #38bdf8 100%);
+  --gradient-section: linear-gradient(135deg, rgba(30, 41, 59, 0.6), rgba(15, 23, 42, 0.6));
+  --gradient-accent: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  --gradient-orb-1: #06b6d4;
+  --gradient-orb-2: #0ea5e9;
   
   /* Font Family */
-  --font-accent: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-accent: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   
   /* Radius */
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
-  --radius-xl: 32px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
 }
 
 [data-theme="light"] {
-  /* Light mode premium palette */
-  --bg-dark: #f8f9fb;
-  --bg-darker: #f0f2f6;
-  --surface: #ffffff;
-  --surface-muted: #f5f7fa;
-  --surface-light: #eef1f7;
+  /* Light mode - Professional tech look */
+  --bg-dark: #ffffff;
+  --bg-darker: #f8fafc;
+  --surface: #f1f5f9;
+  --surface-muted: #f8fafc;
+  --surface-light: #e2e8f0;
   
-  --text: #0f1729;
-  --text-muted: #4a5277;
-  --text-subtle: #6a7088;
-  --text-faint: #8a8aa8;
+  --text: #0f172a;
+  --text-muted: #334155;
+  --text-subtle: #64748b;
+  --text-faint: #94a3b8;
   
-  --border: #dce2f0;
-  --border-light: #e8ecf4;
-  --border-focus: #d0d8e8;
+  --border: #cbd5e1;
+  --border-light: #e2e8f0;
+  --border-focus: #94a3b8;
   
-  --shadow: rgba(0, 217, 255, 0.08);
-  --shadow-soft: rgba(0, 217, 255, 0.04);
-  --shadow-lg: rgba(0, 217, 255, 0.14);
+  --shadow: rgba(6, 182, 212, 0.1);
+  --shadow-soft: rgba(6, 182, 212, 0.05);
+  --shadow-lg: rgba(6, 182, 212, 0.2);
 }
 
 /* ===================== GLOBAL STYLES ===================== */
@@ -214,7 +218,7 @@ nav a::after {
   left: 0;
   width: 0;
   height: 2.5px;
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
   transition: width 0.3s ease;
 }
 
@@ -273,7 +277,7 @@ nav a:hover::after {
 .hero {
   background: var(--gradient-hero);
   box-shadow: 0 20px 60px var(--shadow-lg);
-  border: 1px solid rgba(0, 217, 255, 0.25);
+  border: 1px solid rgba(6, 182, 212, 0.3);
   border-radius: var(--radius-xl);
   padding: 4rem 2.5rem;
   margin-bottom: 2rem;
@@ -400,7 +404,7 @@ h3 {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.4);
   background: var(--primary-light);
 }
 
@@ -480,17 +484,17 @@ h3 {
   line-height: 1;
   padding: 0.5rem 0.8rem;
   border-radius: 20px;
-  border: 1px solid var(--secondary-dark);
-  color: var(--secondary-light);
-  background: color-mix(in oklab, var(--secondary) 12%, transparent);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--primary-light);
+  background: rgba(6, 182, 212, 0.1);
   font-weight: 500;
   transition: all 0.2s ease;
 }
 
 .tech-tag:hover {
-  border-color: var(--secondary-light);
-  background: color-mix(in oklab, var(--secondary) 18%, transparent);
-  box-shadow: 0 4px 12px rgba(124, 92, 255, 0.2);
+  border-color: var(--primary);
+  background: rgba(6, 182, 212, 0.15);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.25);
 }
 
 .card ul,
