@@ -33,7 +33,7 @@ function App() {
 
   const content = {
     fr: {
-      nav: ['À propos', 'Compétences', 'Projets', 'Services', 'Parcours', 'Contact'],
+      nav: ['💎 À propos', '⚡ Compétences', '🚀 Projets', '🛠️ Services', '📈 Parcours', '💬 Contact'],
       role: 'Software Engineer · Full-Stack · Mobile · Backend',
       heroTitle:
         'Je conçois des produits digitaux scalables qui génèrent des résultats business mesurables.',
@@ -47,38 +47,38 @@ function App() {
         { label: 'Approche', value: 'Architecture + Produit' },
         { label: 'Priorités', value: 'Sécurité · Performance' },
       ],
-      aboutTitle: 'À propos',
+      aboutTitle: '💎 À propos',
       aboutText:
         'Je suis Rayen Houaidi, Software Engineer orienté valeur client. Mon travail consiste à aligner stratégie produit, architecture technique et exécution rapide pour livrer des plateformes qui améliorent les opérations, réduisent les risques et accélèrent la croissance.',
-      skillsTitle: 'Compétences techniques',
+      skillsTitle: '⚡ Compétences techniques',
       skills: {
-        first: 'Frontend & Mobile',
-        second: 'Backend & APIs',
-        third: 'Data & Bases de données',
-        fourth: 'Cloud & Delivery',
+        first: '🎨 Frontend & Mobile',
+        second: '🔧 Backend & APIs',
+        third: '💾 Data & Bases de données',
+        fourth: '☁️ Cloud & Delivery',
       },
-      projectsTitle: 'Projets phares',
+      projectsTitle: '🚀 Projets phares',
       problem: 'Problème',
       solution: 'Solution',
       tech: 'Technologies',
       results: 'Résultats',
-      servicesTitle: 'Services proposés',
+      servicesTitle: '🛠️ Services proposés',
       services: [
         {
-          title: 'Développement produit sur-mesure',
-          text: 'Conception et livraison d’applications web, mobile et backend alignées à vos objectifs business.',
+          title: '🎯 Développement produit sur-mesure',
+          text: 'Conception et livraison d'applications web, mobile et backend alignées à vos objectifs business.',
         },
         {
-          title: 'Architecture API & Scalabilité',
+          title: '🏗️ Architecture API & Scalabilité',
           text: 'Structuration de systèmes robustes, sécurisés et prêts pour la montée en charge.',
         },
         {
-          title: 'Modernisation & Performance',
+          title: '⚙️ Modernisation & Performance',
           text: 'Refonte technique, optimisation de la performance et réduction de la dette technique.',
         },
       ],
-      experienceTitle: 'Expérience & formation',
-      contactTitle: 'Contact & Call-To-Action',
+      experienceTitle: '📈 Expérience & formation',
+      contactTitle: '💬 Contact & Call-To-Action',
       contactText:
         'Vous lancez un produit, modernisez une plateforme ou renforcez votre backend ? Parlons de vos objectifs et construisons une solution orientée résultats.',
       contactButton: 'Réserver un échange',
@@ -87,7 +87,7 @@ function App() {
       themeButtonLight: 'Mode sombre',
     },
     en: {
-      nav: ['About', 'Skills', 'Projects', 'Services', 'Experience', 'Contact'],
+      nav: ['💎 About', '⚡ Skills', '🚀 Projects', '🛠️ Services', '📈 Experience', '💬 Contact'],
       role: 'Software Engineer · Full-Stack · Mobile · Backend',
       heroTitle: 'I design scalable digital products that drive measurable business outcomes.',
       heroLead:
@@ -105,35 +105,35 @@ function App() {
         'I am Rayen Houaidi, a Software Engineer focused on client value. I align product strategy, technical architecture, and fast execution to deliver platforms that improve operations, reduce risk, and accelerate growth.',
       skillsTitle: 'Technical Skills',
       skills: {
-        first: 'Frontend & Mobile',
-        second: 'Backend & APIs',
-        third: 'Data & Databases',
-        fourth: 'Cloud & Delivery',
+        first: '🎨 Frontend & Mobile',
+        second: '🔧 Backend & APIs',
+        third: '💾 Data & Databases',
+        fourth: '☁️ Cloud & Delivery',
       },
-      projectsTitle: 'Featured Projects',
+      projectsTitle: '🚀 Featured Projects',
       problem: 'Problem',
       solution: 'Solution',
       tech: 'Tech',
       results: 'Results',
-      servicesTitle: 'Services Offered',
+      servicesTitle: '🛠️ Services Offered',
       services: [
         {
-          title: 'Custom Product Development',
+          title: '🎯 Custom Product Development',
           text: 'Design and delivery of web, mobile, and backend solutions aligned with business goals.',
         },
         {
-          title: 'API Architecture & Scalability',
+          title: '🏗️ API Architecture & Scalability',
           text: 'Engineering robust, secure systems ready for long-term growth and scaling.',
         },
         {
-          title: 'Modernization & Performance',
+          title: '⚙️ Modernization & Performance',
           text: 'Technical revamp, performance optimization, and debt reduction for sustainable delivery.',
         },
       ],
-      experienceTitle: 'Experience & Education',
-      contactTitle: 'Contact & Call-To-Action',
+      experienceTitle: '📈 Experience & Education',
+      contactTitle: '💬 Contact & Call-To-Action',
       contactText:
-        'Launching a product, modernizing a platform, or strengthening your backend? Let’s discuss your goals and build a results-driven solution.',
+        'Launching a product, modernizing a platform, or strengthening your backend? Let's discuss your goals and build a results-driven solution.',
       contactButton: 'Book a Discovery Call',
       languageButton: 'FR',
       themeButtonDark: 'Light mode',
@@ -355,12 +355,14 @@ function App() {
               <>
                 <h3 style={{ 
                   marginBottom: '1.5rem', 
-                  background: 'linear-gradient(135deg, #06b6d4 0%, #0ea5e9 100%)',
+                  background: 'linear-gradient(135deg, #dd33fa 0%, #ff1493 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  backgroundClip: 'text',
+                  fontSize: '1.8rem',
+                  fontWeight: '700'
                 }}>
-                  Enterprise Operations SaaS - Live Dashboard Preview
+                  🎯 Enterprise Operations SaaS - Live Dashboard Preview
                 </h3>
                 <OperationsSaaSDashboard />
               </>
@@ -369,12 +371,14 @@ function App() {
               <>
                 <h3 style={{ 
                   marginBottom: '1.5rem', 
-                  background: 'linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%)',
+                  background: 'linear-gradient(135deg, #ff66ff 0%, #dd33fa 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  backgroundClip: 'text',
+                  fontSize: '1.8rem',
+                  fontWeight: '700'
                 }}>
-                  Mobile Field Service - Real-time Sync Demo
+                  📱 Mobile Field Service - Real-time Sync Demo
                 </h3>
                 <FieldServiceDemo />
               </>
@@ -383,12 +387,14 @@ function App() {
               <>
                 <h3 style={{ 
                   marginBottom: '1.5rem', 
-                  background: 'linear-gradient(135deg, #0ea5e9 0%, #22d3ee 100%)',
+                  background: 'linear-gradient(135deg, #ff1493 0%, #ff66ff 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text'
+                  backgroundClip: 'text',
+                  fontSize: '1.8rem',
+                  fontWeight: '700'
                 }}>
-                  Secure API - Architecture & Performance
+                  🔐 Secure API - Architecture & Performance
                 </h3>
                 <APIArchitectureDemo />
               </>
