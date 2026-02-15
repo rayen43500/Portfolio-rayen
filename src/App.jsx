@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import { OperationsSaaSDashboard, FieldServiceDemo, APIArchitectureDemo } from './components/ProjectDemo'
 
 function App() {
   const [theme, setTheme] = useState('dark')
   const [language, setLanguage] = useState('fr')
+  const [activeProjectDemo, setActiveProjectDemo] = useState(0)
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
@@ -36,9 +38,10 @@ function App() {
       heroTitle:
         'Je conçois des produits digitaux scalables qui génèrent des résultats business mesurables.',
       heroLead:
-        'J’aide les entreprises à transformer des enjeux métier complexes en applications web, mobiles et backend sécurisées, performantes et prêtes à évoluer.',
+        'J'aide les entreprises à transformer des enjeux métier complexes en applications web, mobiles et backend sécurisées, performantes et prêtes à évoluer.',
       ctaPrimary: 'Démarrer un projet',
       ctaSecondary: 'Voir les cas clients',
+      demoTitle: 'Démo interactive du projet',
       metrics: [
         { label: 'Focus principal', value: 'Impact business' },
         { label: 'Approche', value: 'Architecture + Produit' },
@@ -91,6 +94,7 @@ function App() {
         'I help companies turn complex business challenges into secure, high-performance web, mobile, and backend solutions built to scale.',
       ctaPrimary: 'Start a Project',
       ctaSecondary: 'View Case Studies',
+      demoTitle: 'Interactive Project Demo',
       metrics: [
         { label: 'Core focus', value: 'Business impact' },
         { label: 'Approach', value: 'Architecture + Product' },
@@ -315,7 +319,7 @@ function App() {
         <section id="projects" className="section">
           <h2>{activeContent.projectsTitle}</h2>
           <div className="projects-grid">
-            {projects.map((project) => (
+            {projects.map((project, idx) => (
               <article key={project.title} className="project-card">
                 <h3>{project.title}</h3>
                 <div className="tech-tags">
@@ -334,8 +338,43 @@ function App() {
                 <p>
                   <strong>{activeContent.results}:</strong> {project.results[language]}
                 </p>
+                <button
+                  className="btn btn-secondary"
+                  style={{ marginTop: '1rem', width: '100%' }}
+                  onClick={() => setActiveProjectDemo(idx)}
+                >
+                  {activeContent.demoTitle}
+                </button>
               </article>
             ))}
+          </div>
+
+          {/* Project Demos */}
+          <div style={{ marginTop: '3rem' }}>
+            {activeProjectDemo === 0 && (
+              <>
+                <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>
+                  Enterprise Operations SaaS - Live Dashboard Preview
+                </h3>
+                <OperationsSaaSDashboard />
+              </>
+            )}
+            {activeProjectDemo === 1 && (
+              <>
+                <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>
+                  Mobile Field Service - Real-time Sync Demo
+                </h3>
+                <FieldServiceDemo />
+              </>
+            )}
+            {activeProjectDemo === 2 && (
+              <>
+                <h3 style={{ marginBottom: '1.5rem', color: 'var(--primary)' }}>
+                  Secure API - Architecture & Performance
+                </h3>
+                <APIArchitectureDemo />
+              </>
+            )}
           </div>
         </section>
 
