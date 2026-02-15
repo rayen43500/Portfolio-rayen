@@ -1,0 +1,77 @@
+:root {
+  --bg: #0a0e1a;
+  --surface: #13182b;
+  --surface-muted: #1a2036;
+  --text: #f6f7fa;
+  --text-muted: #b6bed6;
+  --border: #2a3550;
+  --accent: #7b5cff;
+  --accent-soft: #b7aaff;
+  --accent-contrast: #fff;
+  --shadow: rgba(10, 16, 40, 0.38);
+  --shadow-soft: rgba(10, 16, 40, 0.18);
+  --orb-1: linear-gradient(135deg, #7b5cff 0%, #21b6ff 100%);
+  --orb-2: linear-gradient(135deg, #ffb86b 0%, #7b5cff 100%);
+  --gradient-hero: linear-gradient(120deg, #7b5cff 0%, #21b6ff 100%);
+  --gradient-section: linear-gradient(120deg, #232a4d 0%, #1a2036 100%);
+  --glass-blur: blur(18px) saturate(140%);
+  --font-main: 'Sora', 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-accent: 'Sora', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+:root[data-theme='light'] {
+  --bg: #f7f8fd;
+  --surface: #fff;
+  --surface-muted: #f3f5fa;
+  --text: #1a1d2b;
+  --text-muted: #5a6780;
+  --border: #e2e6f3;
+  --accent: #7b5cff;
+  --accent-soft: #b7aaff;
+  --accent-contrast: #fff;
+  --shadow: rgba(120, 120, 180, 0.10);
+  --shadow-soft: rgba(120, 120, 180, 0.06);
+  --orb-1: linear-gradient(135deg, #b7aaff 0%, #46a7ff 100%);
+  --orb-2: linear-gradient(135deg, #ffd6a6 0%, #7b5cff 100%);
+  --gradient-hero: linear-gradient(120deg, #b7aaff 0%, #46a7ff 100%);
+  --gradient-section: linear-gradient(120deg, #fff 0%, #f3f5fa 100%);
+  --glass-blur: blur(14px) saturate(120%);
+  --font-main: 'Sora', 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-accent: 'Sora', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-main);
+  letter-spacing: 0.01em;
+  font-feature-settings: "ss01" on, "ss02" on;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--font-accent);
+  letter-spacing: 0.01em;
+}
