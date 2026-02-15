@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
 :root {
   --bg: #0a0e1a;
   --surface: #13182b;
@@ -24,8 +26,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
 
 :root[data-theme='light'] {
   --bg: #f7f8fd;
